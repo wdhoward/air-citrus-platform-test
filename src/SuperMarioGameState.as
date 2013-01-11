@@ -6,7 +6,7 @@ package
 	import Box2D.Dynamics.b2Body;
 	import Box2D.Dynamics.Contacts.b2Contact;
 	
-	import citrus.core.StarlingState;
+	import citrus.core.starling.StarlingState;
 	import citrus.math.MathVector;
 	import citrus.objects.Box2DPhysicsObject;
 	import citrus.objects.platformer.box2d.Cannon;
@@ -32,7 +32,7 @@ TODO: wire up goal at end
 	: add toggle for triggers
 	: add springboard
 	*/
-	public class SuperMarioGameState extends StarlingState
+	public class SuperMarioGameState extends citrus.core.starling.StarlingState
 	{
 		[Embed(source="../assets/tilesetground.png")]
 		private var tilesetground:Class;
