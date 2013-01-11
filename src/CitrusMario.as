@@ -10,6 +10,7 @@ package
 		
 		public function CitrusMario()
 		{
+			trace("startup");
 			setUpStarling(true);
 			state = new SuperMarioGameState(XML(new map()));
 		}
