@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="100" height="100" tilewidth="16" tileheight="16">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16">
+  <image source="tilesetground.png" width="128" height="96"/>
+ </tileset>
+ <layer name="level" width="100" height="100">
+  <data encoding="base64" compression="zlib">
+   eJzt1UFuwjAQBVAX1KACZVEJ7n/UsmABo0xwmpC46D1pNjFKbH+PKQUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIfF5rE6q7G49jLYpr6IZ/PquP8O3txPftkyq398fnLWbyXR7neFrw21/h24fb83iO56iu9Ge1ZiZ9/bwr7eWRnfMpdRoYG5tJ3z7+5X6JvZDNeylZHj9JvSqPJfvkPsvYC63mkc2t5jzV5DF0vl/9P9q3huOTeS9lrTzWvCfGrqHlPM4lv8ue1aWMy6O2j8b22TvlMVfV7smUfsz2Ux7yqCWP/5EHkPsFJPUUwQ==
+  </data>
+ </layer>
+ <objectgroup name="platforms" width="100" height="100">
+  <object name="platformOne" type="citrus.objects.platformer.box2d.Platform" x="16" y="1424" width="330" height="93"/>
+  <object name="platformTwo" type="citrus.objects.platformer.box2d.Platform" x="222" y="1392" width="96" height="11">
+   <properties>
+    <property name="oneWay" value="true"/>
+   </properties>
+  </object>
+  <object name="platformThree" type="citrus.objects.platformer.box2d.Platform" x="382" y="1473" width="158" height="45"/>
+  <object name="platformFour" type="citrus.objects.platformer.box2d.Platform" x="640" y="1440" width="129" height="15"/>
+  <object name="platformFive" type="citrus.objects.platformer.box2d.Platform" x="542" y="1504" width="98" height="30"/>
+  <object name="platformSix" type="citrus.objects.platformer.box2d.Platform" x="640" y="1504" width="190" height="32"/>
+  <object name="mario" type="citrus.objects.platformer.box2d.Hero" x="32" y="1400" width="19" height="19">
+   <properties>
+    <property name="jumpHeight" value="8"/>
+   </properties>
+  </object>
+  <object name="frog" type="citrus.objects.platformer.box2d.Enemy" x="624" y="1472" width="16" height="16">
+   <properties>
+    <property name="" value=""/>
+   </properties>
+  </object>
+  <object name="cannon" type="citrus.objects.platformer.box2d.Cannon" x="736" y="1408" width="32" height="32">
+   <properties>
+    <property name="fireRate" value="1000"/>
+   </properties>
+  </object>
+  <object name="bottom" type="citrus.objects.platformer.box2d.Sensor" x="0" y="1568" width="1584" height="16"/>
+  <object name="trigger" type="citrus.objects.platformer.box2d.Sensor" x="368" y="1360" width="32" height="32"/>
+  <object name="leftWall" type="citrus.objects.platformer.box2d.Platform" x="0" y="0" width="16" height="1584"/>
+  <object name="rightWall" type="citrus.objects.platformer.box2d.Platform" x="1584" y="0" width="16" height="1584"/>
+  <object name="rightTrigger" type="citrus.objects.platformer.box2d.Sensor" x="800" y="1472" width="32" height="32"/>
+  <object name="platformSix" type="citrus.objects.platformer.box2d.Platform" x="880" y="1456" width="48" height="80"/>
+  <object name="platformSix" type="citrus.objects.platformer.box2d.Platform" x="928" y="1424" width="80" height="112"/>
+  <object name="platformSix" type="citrus.objects.platformer.box2d.Platform" x="1008" y="1392" width="80" height="144"/>
+  <object name="platformEnd" type="citrus.objects.platformer.box2d.Platform" x="1504" y="1392" width="80" height="176"/>
+  <object name="goal" type="citrus.objects.platformer.box2d.Sensor" x="1520" y="1344" width="48" height="48"/>
+  <object name="mover" type="citrus.objects.platformer.box2d.MovingPlatform" x="1120" y="1328" width="64" height="32"/>
+ </objectgroup>
+</map>
